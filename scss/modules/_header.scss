@@ -1,0 +1,46 @@
+.header{
+    background: url('../images/bg1.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    // background-attachment: fixed;
+    color: #fff;
+    padding: 10px 35px;
+
+    // &__container{
+    // background: #000000;
+    // opacity: 0.3;
+    // }
+
+    &__navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    &__logo{
+        font-family:'Montserrat', sans-serif;
+        @include font(20px, 800, 24px);
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__title{
+        @include font(48px, 400, 48px);
+        font-family: $pf;
+        margin-bottom: 60px;
+    }
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+

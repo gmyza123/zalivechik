@@ -1,0 +1,22 @@
+.discount{
+    background: url('../images/people.jpg') no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    
+
+
+    &__wrapper{
+        background: #000000;
+        opacity: 0.3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+    }
+
+    &__baner{
+        color:#fff;
+        @include font(50px, 700, 66px);
+        font-family: $pf;
+    }
+}

@@ -1,0 +1,25 @@
+.explore{
+    padding: 60px 60px 100px;
+    color: #424948;
+
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    &__img{
+        box-shadow: 40px 40px 0 #48645f 
+
+    }
+
+    &__title{
+        padding-bottom: 40px;
+    }
+
+    &__text{
+        padding-bottom: 50px;
+    }
+}

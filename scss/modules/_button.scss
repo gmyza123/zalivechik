@@ -1,0 +1,44 @@
+.button{
+    background: #48645F;
+    padding: 14px 40px;
+    @include font(18px, 500, 21px);
+    font-family: $rw;
+    color:#fff;
+    
+    &:hover{
+        background: #80A298;
+    }
+
+    &:active{
+        background: #355653;
+    }
+
+    &:disabled{
+        background: #97A8A5;
+    }
+
+}
+
+.button__book{
+    background: #7A8479;
+    color:#fff;
+    border: 1px solid #fff;
+    padding: 14px 40px;
+    @include font(18px, 500, 21px);
+    font-family: $rw;
+
+    &:hover{
+        color:#80A298;
+        border: 1px solid #80A298;
+    }
+
+    &:active{
+        color:#355653;
+        border: 1px solid #355653;
+    }
+
+    &:disabled{
+        color: #96A8A5;
+        border: 1px solid #96A8A5;
+    }
+}

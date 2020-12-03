@@ -1,0 +1,56 @@
+.gazebos{
+    padding: 100px 60px;
+    color:#424948;
+    
+    &__img{
+        padding-right: 110px;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+    }
+
+}
+
+.coste{
+    @include font(28px, 700, 40px);
+    font-family: $pf;
+}
+
+.scroll{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #48645F;
+}
+
+.arow{
+    font-size: 30px;
+    color: #96A8A5;
+}
+
+.circle{
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.border__big{
+    width: 45px;
+    height: 10px;
+    border: 1.5px solid #48645F;
+    border-radius: 5px;
+    display: block;
+}
+    
+.border__small{
+    width: 10px;
+    height: 10px;
+    border: 1.5px solid #48645F;
+    border-radius:5px;
+    display: block;
+}
+

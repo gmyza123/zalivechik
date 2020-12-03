@@ -1,0 +1,13 @@
+.choose{
+    background: #7A8479;
+    padding: 60px;
+    color:#fff;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+}

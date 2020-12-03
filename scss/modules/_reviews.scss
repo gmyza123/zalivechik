@@ -1,0 +1,58 @@
+.reviews{
+    padding: 100px 60px;
+    color: #424948;
+
+    &__text{
+        margin-top: 20px;
+        color:#97A8A5;
+        @include font(18px, 500, 21px);
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 50px;
+    }
+
+    &__review{
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    &__name{
+        @include font(18px, 700, 21px);
+        font-family: $rw;
+    }
+
+    &__date{
+      font-family: $rw;
+      @include font(12px, 500, 14px);  
+    }
+
+    &__rating{
+        display: flex;
+    }
+
+    &__stars{
+        margin-left: 20px;
+        display: flex;
+        align-items: flex-end;
+        font-size: 27px;
+
+        &:active{
+            color: #0068C9; 
+        }
+    }
+
+    &__img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__facebook{
+        margin-left: 20px;
+        color: #0068C9;
+    }
+}
+

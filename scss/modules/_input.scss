@@ -1,0 +1,30 @@
+.input{
+    @include font(16px, 500, 19px);
+    font-family: $rw;
+    background-color: inherit;
+    border-bottom: 2px solid #fff;
+    position: relative;
+    
+    &::placeholder{
+        color:#fff;
+    }
+
+    &:focus{
+        &::placeholder{
+            color:#fff;
+            
+        }
+    }
+    
+    &:active{
+
+    }
+
+    &:disabled{
+
+    }
+
+    &:succes{
+
+    }
+}

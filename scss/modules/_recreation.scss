@@ -1,0 +1,17 @@
+.recreation{
+    padding: 100px 60px 455px;
+    color: #424948;
+
+
+
+    &__title{
+        @include font(36px, 400, 60px);
+        font-family: $pf;
+        text-transform: uppercase;
+    }
+
+    &__text{
+        @include font(16px, 500, 28px);
+        font-family: $rw;
+    }
+}

@@ -1,0 +1,48 @@
+h2.title{
+    @include font(36px, 400, 60px);
+    font-family: $pf;
+    text-transform: uppercase;
+
+}
+
+h3.title{
+    @include font(32px, 400, 42px);
+    font-family: $pf;
+    text-transform: uppercase;
+}
+
+.text{
+    @include font(16px, 500, 28px);
+    font-family: $rw;
+    
+}
+
+
+// form{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     padding-right: 65px;
+// }
+
+input.text{
+    @include font(16px, 500, 19px);
+    font-family: $rw;
+    background-color: inherit;
+    position: relative;
+    
+
+    &::placeholder{
+        color:#fff;
+    }
+
+    &::before{
+        @include size(2px, auto);
+        @include align(false, true, absolute);
+        top: -8px;
+
+        content: '';
+        background-color: #fff;
+    }
+
+}

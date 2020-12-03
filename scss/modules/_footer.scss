@@ -1,0 +1,64 @@
+.footer{
+    background: #7A8479;
+    padding: 40px 60px 25px;
+    color: #fff;
+    font-family: $rw;
+
+    &__logo{
+        font-family:'Montserrat', sans-serif;
+        @include font(28px, 800, 34px);
+        margin-bottom: 40px;
+    }
+
+    &__info1{
+        @include font(16px, 400, 19px);
+        font-family: $rw;
+        margin-bottom: 20px;
+    }
+
+    &__info2{
+        @include font(16px, 500, 19px);
+        font-family: $rw;
+        margin-bottom: 20px;
+    }
+
+    &__instagram{
+        margin-right: 15px;
+    }
+
+    &__facebook{
+    margin-right: 15px;
+    }
+}
+.a{
+    display: flex;
+}
+.s{
+    @include font(18px, 700, 21px);
+    margin-left: 7px;
+}
+.d{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.z{
+    display: flex;
+}
+.c{
+    margin-left: 6px;
+}
+.x{
+    display: flex;
+}
+.v{
+    margin-right: 20px;
+    @include font(12px, 400, 14px);
+    
+}
