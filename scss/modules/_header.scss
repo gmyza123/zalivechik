@@ -1,15 +1,9 @@
 .header{
-    background: url('../images/bg1.jpg') no-repeat center center;
+    background: url('../images/bg.jpg') no-repeat center center;
     background-size: cover;
-    height: 100vh;
-    // background-attachment: fixed;
+    min-height: 100vh;
     color: #fff;
     padding: 10px 35px;
-
-    // &__container{
-    // background: #000000;
-    // opacity: 0.3;
-    // }
 
     &__navigation{
     display: flex;
@@ -31,6 +25,7 @@
     }
 
     &__title{
+        margin-top: 30px;
         @include font(48px, 400, 48px);
         font-family: $pf;
         margin-bottom: 60px;
@@ -41,6 +36,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 90vh;
 }
 

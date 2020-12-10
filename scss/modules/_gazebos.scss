@@ -2,8 +2,12 @@
     padding: 100px 60px;
     color:#424948;
     
-    &__img{
+    &__gazeb{
         padding-right: 110px;
+    }
+
+    &__img{
+        width: 100%;
     }
 
     &__info{
@@ -27,11 +31,6 @@
     color: #48645F;
 }
 
-.arow{
-    font-size: 30px;
-    color: #96A8A5;
-}
-
 .circle{
     width: 90px;
     display: flex;
@@ -41,7 +40,7 @@
 .border__big{
     width: 45px;
     height: 10px;
-    border: 1.5px solid #48645F;
+    border: 2px solid #48645F;
     border-radius: 5px;
     display: block;
 }
@@ -49,8 +48,9 @@
 .border__small{
     width: 10px;
     height: 10px;
-    border: 1.5px solid #48645F;
+    border: 2px solid #48645F;
     border-radius:5px;
     display: block;
+    
 }
 

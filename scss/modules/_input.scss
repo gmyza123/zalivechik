@@ -1,30 +1,49 @@
 .input{
-    @include font(16px, 500, 19px);
+    @include font(16px, 700, 19px);
     font-family: $rw;
     background-color: inherit;
     border-bottom: 2px solid #fff;
-    position: relative;
-    
+    width: 100%;
+    padding-bottom: 10px;
+    transition: all .3s;
+    color:#fff;
+
     &::placeholder{
-        color:#fff;
+        @include font(16px, 500, 19px);
+        color: #fff;
     }
 
-    &:focus{
-        &::placeholder{
-            color:#fff;
-            
-        }
-    }
-    
-    &:active{
-
-    }
-
-    &:disabled{
-
-    }
-
-    &:succes{
-
+    &:focus::-webkit-input-placeholder {
+        color: transparent
     }
 }
+
+.p{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-end;
+    transition: all .3s;
+}
+
+input:focus{
+    border-bottom: 3px solid #fff;
+    padding-bottom: 6px;
+}
+
+.label {
+    @include font(12px, 500, 14px);
+    font-family: $rw;
+    position: absolute;
+    left: 0;
+    z-index: -1;   
+}
+
+input:focus + label{
+    z-index: 1;
+    bottom: 35px;
+    transition: all .3s;
+}
+

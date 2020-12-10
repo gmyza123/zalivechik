@@ -22,7 +22,7 @@
 <body>
 	<header class="header">
 
-		<div class="container-fluid header__container">
+		<div class="container header__container">
 			<nav class="header__navigation">
 				<div class="header__logo">zaLIVEchik</div>
 
@@ -42,8 +42,8 @@
 					</li>
 					<li class="menu__item">
 						<div>
-							<p>с 9:00 до 20:00</p>
-							<a href="tel:+3 (097)98-62-444" class="menu__link">(097)98-62-444</a>
+							<p class="menu__link">с 9:00 до 20:00</p>
+							<a href="tel:+380979862444" class="menu__link">(097)98-62-444</a>
 						</div>
 					</li>
 				</ul>
@@ -52,7 +52,7 @@
 			<div class="wrapper">
 				<div class="header__info">
 					<h1 class="header__title">Выбирайте беседку для вашего отдыха</h1>
-					<button class="button header__button">Выбрать</button>
+					<button class="button">Выбрать</button>
 				</div>
 
 			</div>
@@ -60,7 +60,7 @@
 	</header>
 
 	<section class="recreation">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
 				<div class="col-6">
 					<h2 class="recreation__title">Отдых на природе<br>Аренда беседок и лодок</h2>
@@ -91,24 +91,24 @@
 	</section>
 
 	<section class="advantages">
-		<div class="container-fluid advantages__container">
+		<div class="container advantages__container">
 			<img src="images/house.jpg" class="advantages__img">
 			<h2 class="title advantages__title">Наши преимущества</h2>
 			<div class="row">
-				<div class="offset-3 col-3">
+				<div class="offset-2 col-4">
 					<ul type="disc" class="advantages__ul">
-						<li>Экологичность</li>
-						<li>Чистота</li>
-						<li>Приватность</li>
-						<li>Активный отдых на природе</li>
+						<li class="advantages__li">Экологичность</li>
+						<li class="advantages__li">Чистота</li>
+						<li class="advantages__li">Приватность</li>
+						<li class="advantages__li">Активный отдых на природе</li>
 					</ul>
 				</div>
-				<div class="col-3">
+				<div class="col-4">
 					<ul type="disc" class="advantages__ul">
-						<li>Подойдет для больших компаний</li>
-						<li>Отдых возле воды</li>
-						<li>Лицензия на рыбалку</li>
-						<li>И просто приятная атмосфера</li>
+						<li class="advantages__li">Подойдет для больших компаний</li>
+						<li class="advantages__li">Отдых возле воды</li>
+						<li class="advantages__li">Лицензия на рыбалку</li>
+						<li class="advantages__li">И просто приятная атмосфера</li>
 					</ul>
 				</div>
 
@@ -117,29 +117,30 @@
 	</section>
 
 	<section class="explore">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
 				<div class="col-6 explore__info">
 					<h2 class="title explore__title">Исследуй новые места</h2>
 					<p class="text explore__text">Не стоит называть отважным того, кто ни разу не прошел сотни
-						километров.
-						Если хочешь
-						постичь, кто
-						ты на самом деле, ступай и иди, пока вокруг не останется тех, кто знает тебя по имени.
+						километров.Если хочешь постичь, кто ты на самом деле, ступай и иди, пока вокруг не останется
+						тех,
+						кто знает тебя по имени.
 						Путешествие — великий уравнитель, великий учитель, горький, как лекарство, и твердый как
 						зеркало. Долгий путь позволит тебе узнать о себе больше, чем сотня лет спокойного созерцания.
 						Выбирай скорее беседку и отправляйся в путешествие.</p>
-					<button class="button">Выбрать беседку &#8594</button>
+					<button class="button explore__button">Выбрать беседку
+						<i class="icon-Arrow-1 explore__arrow"></i>
+					</button>
 				</div>
 				<div class="col-6">
-					<img src="images/greenhouse.png" class="explore__img">
+					<img src="images/greenhouse.jpg" class="explore__img">
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="choose">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
 				<div class="col-6">
 					<img src="images/beach.jpg">
@@ -147,14 +148,32 @@
 				<div class="col-6 choose__container">
 					<h3 class="title">Выбрать дату</h3>
 					<p class="text">Беседка считается забронированной после внесения предоплаты</p>
-
-					<input type="number" placeholder="Дата прибытия" class="input">
-					<input type="number" placeholder="Время прибытия" class="input">
-					<input type="number" placeholder="Количество людей" class="input">
-					<input type="text" placeholder="Фио" class="input">
-					<input type="tel" placeholder="Ваш номер телефона" class="input">
-					<input type="email" placeholder="Ваш e-mail" class="input">
-
+					<form class="form">
+						<div class="p">
+							<input type="data" class="input" placeholder="Дата прибытия">
+							<label class="label">Дата прибытия</label>
+						</div>
+						<div class="p">
+							<input type="number" class="input" placeholder="Время прибытия">
+							<label class="label">Время прибытия</label>
+						</div>
+						<div class="p">
+							<input type="number" class="input" placeholder="Количество людей">
+							<label class="label">Количество людей</label>
+						</div>
+						<div class="p">
+							<input type="text" class="input" placeholder="Фио">
+							<label class="label">Фио</label>
+						</div>
+						<div class="p">
+							<input type="tel" class="input" placeholder="Ваш номер телефона">
+							<label class="label">Ваш номер телефона</label>
+						</div>
+						<div class="p">
+							<input type="email" class="input" placeholder="Ваш e-mail">
+							<label class="label">Ваш e-mail</label>
+						</div>
+					</form>
 					<button class="button__book">Забронировать</button>
 				</div>
 			</div>
@@ -162,14 +181,14 @@
 	</section>
 
 	<section class="gazebos">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
-				<div class="col-9 gazebos__img">
-					<img src="images/rosehouse.jpg">
+				<div class="col-9 gazebos__gazeb">
+					<img src="images/rosehouse.jpg" class="gazebos__img">
 					<div class="scroll">
-						<div class="arow">
-							<span>&#8592</span>
-							<span>&#8594</span>
+						<div class="arrow">
+							<i class="arrow__left icon-Arrow-2"></i>
+							<i class="arrow__right icon-Arrow-3"></i>
 						</div>
 						<div class="circle">
 							<span class="border__big"></span>
@@ -187,36 +206,39 @@
 						<li class="text">•На берегу</li>
 						<li class="text">•Расстояние до воды 5 метров</li>
 					</ul>
-					<button class="button">Забронировать &#8594</button>
+					<button class="button explore__button">Забронировать
+						<i class="icon-Arrow-1 explore__arrow"></i>
+					</button>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="discount">
-		<div class="discount__wrapper">
-			<p class="discount__baner">Cкидка 50% по будним дням</p>
-		</div>
+		<p class="discount__baner">Cкидка 50% по будним дням</p>
 	</section>
 
 	<section class="reviews">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
 				<div class="col-4">
 					<h2 class="title">Отзывы</h2>
-					<p class="reviews__text">Перейти к остальным отзывам &#8594</p>
+					<p class="reviews__text">Перейти к остальным отзывам
+						<span class="icon-Arrow-1 reviews__arrow"></span></p>
 				</div>
 				<div class="col-3 reviews__img">
-					<img src="images/jone.jpg" alt="">
-					<div class="arow">
-						<span>&#8592</span>
-						<span>&#8594</span>
+					<div>
+						<img src="images/jone.jpg">
+					</div>
+					<div class="arrow">
+						<span class="arrow__left icon-Arrow-2"></span>
+						<span class="arrow__right icon-Arrow-3"></span>
 					</div>
 				</div>
 				<div class="col-5 reviews__info">
 					<div class="reviews__review">
-						<div class="reviews__name"><span>Джон Смит</span><i
-								class="icon-facebook2 reviews__facebook"></i></div>
+						<div class="reviews__name"><span>Джон Смит</span>
+							<i class="icon-facebook2 reviews__facebook"></i></div>
 						<div class="reviews__date">05.07.2020</div>
 					</div>
 					<div class="text">Хорошее место для отдыха всей семьей на природе.<br />
@@ -231,44 +253,47 @@
 			</div>
 		</div>
 	</section>
-</body>
 
-<footer class="footer">
-	<div class="container-fluid">
-		<div class="footer__logo">zaLIVEchik</div>
-		<div class="row">
-			<div class="col-2">
-				<p class="footer__info1">Аренда беседок</p>
-				<p class="footer__info1">Прокат</p>
-				<p class="footer__info1">ПлавБеседки</p>
-				<p class="footer__info1">Контакты</p>
-			</div>
-			<div class="col-2">
-				<p class="footer__info2">(097)98-62-444</p>
-				<p class="footer__info2">info@zalivechik.com</p>
-			</div>
-			<div class="offset-3 col-5 d">
-				<div class="a">
-					<i class="icon-Vector"></i>
-					<p class="s">Подписаться на рассылку</p>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__logo">zaLIVEchik</div>
+			<div class="row">
+				<div class="col-2">
+					<p class="footer__info1">Аренда беседок</p>
+					<p class="footer__info1">Прокат</p>
+					<p class="footer__info1">ПлавБеседки</p>
+					<p class="footer__info1">Контакты</p>
 				</div>
-				<input type="email" placeholder="Введите ваш e-mail" class="input">
-				<button class="button">Подписаться</button>
+				<div class="col-2">
+					<i class="footer__info2">(097)98-62-444</i>
+					<i class="footer__info2">info@zalivechik.com</i>
+				</div>
+				<div class="offset-3 col-5 d">
+					<div class="a">
+						<i class="icon-letter letter"></i>
+						<p class="s">Подписаться на рассылку</p>
+					</div>
+					<div class="p">
+						<input type="email" placeholder="Введите ваш e-mail" class="input">
+						<label class="label">Ваш e-mail</label>
+					</div>
+					<button class="button footer__button">Подписаться</button>
+				</div>
+			</div>
+			<div class="links">
+				<div class="z">
+					<p class="icon-c"></p>
+					<p class="c">2020 Zalivechik. Все права защищены</p>
+				</div>
+				<div class="x">
+					<div class="v">Ищи нас в соц.сетях</div>
+					<i class="icon-instagram footer__instagram"></i>
+					<i class="icon-facebook footer__facebook"></i>
+					<i class="icon-twitter footer__twitter"></i>
+				</div>
 			</div>
 		</div>
-		<div class="links">
-			<div class="z">
-				<i class="icon-c"></i>
-				<p class="c">2020 Zalivechik. Все права защищены</p>
-			</div>
-			<div class="x">
-				<div class="v">Ищи нас в соц.сетях</div>
-				<i class="icon-instagram footer__instagram"></i>
-				<i class="icon-facebook2 footer__facebook"></i>
-				<i class="icon-twitter footer__twitter"></i>
-			</div>
-		</div>
-	</div>
-</footer>
+	</footer>
+</body>
 
 </html>

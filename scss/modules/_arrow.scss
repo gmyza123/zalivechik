@@ -1,0 +1,23 @@
+.arrow{
+    color: #96A8A5;
+    cursor: pointer;
+    transition: all .3s;
+    padding-top: 10px;
+    font-size: 12px;
+
+    &__left{
+        padding-right: 14px;
+
+        &:hover{
+            color:  #48645F;
+        }
+    }
+
+    &__right{
+        padding-right: 14px;
+
+        &:hover{
+            color:  #48645F;
+        }
+    }
+}

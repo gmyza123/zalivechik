@@ -20,6 +20,11 @@
         justify-content: space-between; 
     }
 
+    &__arrow{
+        margin-left: 10px;
+        font-size: 9px;
+    }
+
     &__name{
         @include font(18px, 700, 21px);
         font-family: $rw;

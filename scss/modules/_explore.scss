@@ -22,4 +22,14 @@
     &__text{
         padding-bottom: 50px;
     }
+    
+    &__arrow{
+        margin-left: 20px;
+        font-size: 9px;
+    }
+
+    &__button{
+        display: flex;
+        align-items: center;
+    }
 }

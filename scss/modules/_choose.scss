@@ -6,8 +6,13 @@
     &__container{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-between; 
         align-items: start;
+        padding-left: 50px;
     }
+}
 
+.form{
+    padding-right: 65px;
+    width: 100%;
 }

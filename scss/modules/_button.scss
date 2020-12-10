@@ -1,9 +1,12 @@
 .button{
     background: #48645F;
-    padding: 14px 40px;
+    padding: 15px 20px;
+    min-width: 155px;
     @include font(18px, 500, 21px);
     font-family: $rw;
     color:#fff;
+    transition: all .3s;
+    cursor: pointer;
     
     &:hover{
         background: #80A298;
@@ -26,6 +29,8 @@
     padding: 14px 40px;
     @include font(18px, 500, 21px);
     font-family: $rw;
+    transition: all .3s;
+    cursor: pointer;
 
     &:hover{
         color:#80A298;
