@@ -4,7 +4,7 @@
     min-width: 155px;
     @include font(18px, 500, 21px);
     font-family: $rw;
-    color:#fff;
+    color:var(--white);
     transition: all .3s;
     cursor: pointer;
     
@@ -24,8 +24,8 @@
 
 .button__book{
     background: #7A8479;
-    color:#fff;
-    border: 1px solid #fff;
+    color:var(--white);
+    border: 1px solid var(--white);
     padding: 14px 40px;
     @include font(18px, 500, 21px);
     font-family: $rw;

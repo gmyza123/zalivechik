@@ -2,15 +2,15 @@
     @include font(16px, 700, 19px);
     font-family: $rw;
     background-color: inherit;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--white);
     width: 100%;
     padding-bottom: 10px;
     transition: all .3s;
-    color:#fff;
+    color:var(--white);
 
     &::placeholder{
         @include font(16px, 500, 19px);
-        color: #fff;
+        color: var(--white);
     }
 
     &:focus::-webkit-input-placeholder {
@@ -29,7 +29,7 @@
 }
 
 input:focus{
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid var(--white);
     padding-bottom: 6px;
 }
 

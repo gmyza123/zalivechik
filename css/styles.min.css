@@ -1,12 +1,9 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap");
 :root {
-  --grey: #262626;
-  --orange: #ff6033;
-  --blue: rgba(0, 196, 196, .9);
-  --shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
-  --bigshadow: 0 4px 10px 0 rgba(0, 0, 0, .5);
+  --white: #f6f8f8;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -113,44 +110,6 @@ h3.title {
   font-family: "Raleway", sans-serif;
 }
 
-input.text {
-  font-size: 16px;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 19px;
-  font-family: "Raleway", sans-serif;
-  background-color: inherit;
-  position: relative;
-}
-
-input.text::-webkit-input-placeholder {
-  color: #fff;
-}
-
-input.text:-ms-input-placeholder {
-  color: #fff;
-}
-
-input.text::-ms-input-placeholder {
-  color: #fff;
-}
-
-input.text::placeholder {
-  color: #fff;
-}
-
-input.text::before {
-  width: 2px;
-  height: auto;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: -8px;
-  content: '';
-  background-color: #fff;
-}
-
 @font-face {
   font-family: 'icomoon';
   src: url("fonts/icomoon/icomoon.eot?tgl9pm");
@@ -209,7 +168,7 @@ input.text::before {
   background: url("../images/bg.jpg") no-repeat center center;
   background-size: cover;
   min-height: 100vh;
-  color: #fff;
+  color: var(--white);
   padding: 10px 35px;
 }
 
@@ -281,7 +240,7 @@ input.text::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
+  color: var(--white);
 }
 
 .menu__item {
@@ -289,7 +248,7 @@ input.text::before {
 }
 
 .menu__link {
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   font-size: 18px;
   font-size: 1.125rem;
@@ -307,7 +266,7 @@ input.text::before {
   font-weight: 500;
   line-height: 21px;
   font-family: "Raleway", sans-serif;
-  color: #fff;
+  color: var(--white);
   -webkit-transition: all .3s;
   transition: all .3s;
   cursor: pointer;
@@ -327,8 +286,8 @@ input.text::before {
 
 .button__book {
   background: #7A8479;
-  color: #fff;
-  border: 1px solid #fff;
+  color: var(--white);
+  border: 1px solid var(--white);
   padding: 14px 40px;
   font-size: 18px;
   font-size: 1.125rem;
@@ -358,6 +317,7 @@ input.text::before {
 .recreation {
   padding: 100px 60px 440px;
   color: #424948;
+  background-color: var(--white);
 }
 
 .recreation__title {
@@ -380,7 +340,7 @@ input.text::before {
 .advantages {
   background: #48645F;
   padding: 0 60px 100px;
-  color: #fff;
+  color: var(--white);
   position: relative;
   padding-top: 240px;
 }
@@ -421,6 +381,7 @@ input.text::before {
 .explore {
   padding: 60px 60px 100px;
   color: #424948;
+  background-color: var(--white);
 }
 
 .explore__info {
@@ -469,7 +430,7 @@ input.text::before {
 .choose {
   background: #7A8479;
   padding: 60px;
-  color: #fff;
+  color: var(--white);
 }
 
 .choose__container {
@@ -501,12 +462,12 @@ input.text::before {
   line-height: 19px;
   font-family: "Raleway", sans-serif;
   background-color: inherit;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid var(--white);
   width: 100%;
   padding-bottom: 10px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  color: #fff;
+  color: var(--white);
 }
 
 .input::-webkit-input-placeholder {
@@ -514,7 +475,7 @@ input.text::before {
   font-size: 1rem;
   font-weight: 500;
   line-height: 19px;
-  color: #fff;
+  color: var(--white);
 }
 
 .input:-ms-input-placeholder {
@@ -522,7 +483,7 @@ input.text::before {
   font-size: 1rem;
   font-weight: 500;
   line-height: 19px;
-  color: #fff;
+  color: var(--white);
 }
 
 .input::-ms-input-placeholder {
@@ -530,7 +491,7 @@ input.text::before {
   font-size: 1rem;
   font-weight: 500;
   line-height: 19px;
-  color: #fff;
+  color: var(--white);
 }
 
 .input::placeholder {
@@ -538,7 +499,7 @@ input.text::before {
   font-size: 1rem;
   font-weight: 500;
   line-height: 19px;
-  color: #fff;
+  color: var(--white);
 }
 
 .input:focus::-webkit-input-placeholder {
@@ -561,7 +522,7 @@ input.text::before {
 }
 
 input:focus {
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid var(--white);
   padding-bottom: 6px;
 }
 
@@ -586,6 +547,7 @@ input:focus + label {
 .gazebos {
   padding: 100px 60px;
   color: #424948;
+  background-color: var(--white);
 }
 
 .gazebos__gazeb {
@@ -646,7 +608,7 @@ input:focus + label {
 .border__big {
   width: 45px;
   height: 10px;
-  border: 2px solid #48645F;
+  border: 1.5px solid #48645F;
   border-radius: 5px;
   display: block;
 }
@@ -654,7 +616,7 @@ input:focus + label {
 .border__small {
   width: 10px;
   height: 10px;
-  border: 2px solid #48645F;
+  border: 1.5px solid #48645F;
   border-radius: 5px;
   display: block;
 }
@@ -675,7 +637,7 @@ input:focus + label {
 }
 
 .discount__baner {
-  color: #fff;
+  color: var(--white);
   font-size: 50px;
   font-size: 3.125rem;
   font-weight: 700;
@@ -686,6 +648,7 @@ input:focus + label {
 .reviews {
   padding: 100px 60px;
   color: #424948;
+  background-color: var(--white);
 }
 
 .reviews__text {
@@ -749,17 +712,6 @@ input:focus + label {
 
 .reviews__stars {
   margin-left: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  font-size: 27px;
-}
-
-.reviews__stars:active {
-  color: #0068C9;
 }
 
 .reviews__img {
@@ -777,10 +729,52 @@ input:focus + label {
   color: #0068C9;
 }
 
+.rating-area:not(:checked) > input {
+  display: none;
+}
+
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 20px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 32px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+
+.rating-area:not(:checked) > label:before {
+  content: '★';
+}
+
+.rating-area > input:checked ~ label {
+  color: #0085ff;
+  text-shadow: 1px 1px #0068C9;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: #0085ff;
+}
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: #0085ff;
+  text-shadow: 1px 1px #0068C9;
+}
+
+.rate-area > label:active {
+  position: relative;
+}
+
 .footer {
   background: #7A8479;
   padding: 40px 60px 25px;
-  color: #fff;
+  color: var(--white);
   font-family: "Raleway", sans-serif;
 }
 

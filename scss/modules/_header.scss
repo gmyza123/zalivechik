@@ -2,7 +2,7 @@
     background: url('../images/bg.jpg') no-repeat center center;
     background-size: cover;
     min-height: 100vh;
-    color: #fff;
+    color: var(--white);
     padding: 10px 35px;
 
     &__navigation{

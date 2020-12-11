@@ -2,7 +2,7 @@
     display: flex;
     text-align: center;
     align-items: center;
-    color: #fff;
+    color: var(--white);
     
     &__item{
         margin-left:20px;
@@ -10,7 +10,7 @@
     }
 
     &__link{
-        color: #fff;
+        color: var(--white);
         text-decoration: none;
         @include font(18px, 400, 21px);
         font-family: $rw;

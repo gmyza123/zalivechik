@@ -1,6 +1,7 @@
 .reviews{
     padding: 100px 60px;
     color: #424948;
+    background-color: var(--white);
 
     &__text{
         margin-top: 20px;
@@ -41,13 +42,6 @@
 
     &__stars{
         margin-left: 20px;
-        display: flex;
-        align-items: flex-end;
-        font-size: 27px;
-
-        &:active{
-            color: #0068C9; 
-        }
     }
 
     &__img{
@@ -61,3 +55,38 @@
     }
 }
 
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 20px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 24px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: #0085ff;
+	text-shadow: 1px 1px #0068C9;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color:#0085ff;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: #0085ff;
+	text-shadow: 1px 1px#0068C9;
+}
+.rate-area > label:active {
+	position: relative;
+}

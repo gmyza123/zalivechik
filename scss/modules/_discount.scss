@@ -7,7 +7,7 @@
     justify-content: center;
 
     &__baner{
-        color:#fff;
+        color:var(--white);
         @include font(50px, 700, 66px);
         font-family: $pf;
     }

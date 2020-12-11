@@ -1,6 +1,7 @@
 .gazebos{
     padding: 100px 60px;
     color:#424948;
+    background-color: var(--white);
     
     &__gazeb{
         padding-right: 110px;
@@ -40,7 +41,7 @@
 .border__big{
     width: 45px;
     height: 10px;
-    border: 2px solid #48645F;
+    border: 1.5px solid #48645F;
     border-radius: 5px;
     display: block;
 }
@@ -48,7 +49,7 @@
 .border__small{
     width: 10px;
     height: 10px;
-    border: 2px solid #48645F;
+    border: 1.5px solid #48645F;
     border-radius:5px;
     display: block;
     
